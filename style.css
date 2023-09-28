@@ -51,9 +51,9 @@ table th {
     border-bottom: 1px dotted black;
 }
 
-table tr: :nth-child(even) { 
+table tr:nth-child(even) { 
     border: 1px solid black;
-    background: lightgray
+    background: lightgray;
 }
 
 table tr:nth-child(odd) {
