@@ -1,0 +1,11 @@
+html {
+    
+}
+
+.centered {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Används för att centrera vertikalt på sidan */
+}
