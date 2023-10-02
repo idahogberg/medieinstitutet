@@ -6,6 +6,29 @@ html {
     
   }
 
+head {
+    box-sizing: inherit;
+}
+
+link {
+    display: none;
+}
+
+  .container {
+    position: absolute;
+    text-align: center;
+  }
+
+  .text-over-image {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: whitesmoke;
+
+  }
+
   .center {
     display: block;
     margin-left: auto;
@@ -57,3 +80,13 @@ html {
       left: 0;
       transform: none;
     }  
+
+.fit-image {
+    position: relative;
+    top: 50%;
+    left: 33%;
+}
+
+.text {
+    margin-right: -27%;
+}
