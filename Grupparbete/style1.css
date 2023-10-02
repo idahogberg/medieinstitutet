@@ -19,6 +19,13 @@ link {
     text-align: center;
   }
 
+  .image {
+    display: inline-block;
+    margin: 10px;
+    top: 30%;
+    left: 50%;
+  }
+
   .text-over-image {
     position: absolute;
     top: 32%;
