@@ -21,10 +21,11 @@ link {
 
   .image {
     display: inline-block;
-    margin: 10px;
-    top: 30%;
-    left: 50%;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
+
 
   .text-over-image {
     position: absolute;
@@ -102,3 +103,6 @@ link {
     margin-right: -27%;
 }
 
+h3{
+margin: 20px;
+}
