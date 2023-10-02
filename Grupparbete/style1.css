@@ -36,12 +36,14 @@ link {
 
   }
 
+
   .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     margin-top: 20px;
+
   }
 
 
@@ -52,6 +54,8 @@ link {
     justify-content: center;
     align-items: center;
     height: 50vh; /* Används för att centrera vertikalt på sidan */
+    margin-top: 540px;
+    margin-bottom: 400px;
 }
 
 /* Add a black background color to the top navigation */
