@@ -21,11 +21,10 @@ link {
 
   .image {
     display: inline-block;
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 10px;
+    top: 30%;
+    left: 50%;
   }
-
 
   .text-over-image {
     position: absolute;
@@ -37,7 +36,6 @@ link {
 
   }
 
-
   .center {
     display: block;
     margin-left: auto;
@@ -46,7 +44,6 @@ link {
     margin-top: 20px;
 
   }
-
 
 .centered {
     text-align: center;
@@ -101,8 +98,4 @@ link {
 
 .text {
     margin-right: -27%;
-}
-
-h3{
-margin: 20px;
 }
