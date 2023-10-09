@@ -1,73 +1,101 @@
 <html>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>WONG - Meny</title>
-        <link rel="stylesheet" href="style1.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Thasadith&display=swap" rel="stylesheet">
-        <link rel="icon" href="WONG-logo.png" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <title>WONG - Meny</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Thasadith&display=swap" rel="stylesheet">
+    <link rel="icon" href="WONG-logo.png" type="image/x-icon">
+    <style>
+        .clock {
+            font-size: 48px;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function clickFunction() {
+
+            let ourDiv = document.querySelector("#background-changer");
+
+            ourDiv.style.backgroundColor = "tan";
+        }
+    </script>
+    <style>
+        div {
+            background: tan;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="topnav">
+
+        <section class="topnav-centered">
+            <a href="index1.html">HEM</a>
+            <a href="index2.html" class="active">MENY</a>
+            <a href="https://www.emiliacarlsson.se/">BOKA BORD</a>
+            <a href="https://www.idasofiahogberg.se/">CATERING</a>
+            <a href="index3.html">OM OSS</a>
+        </section>
+    </section>
+
+    <h1>MENY</h1>
+    <table>
+        <tr>
+            <th>Maträtt</th>
+            <th>Pris</th>
+        </tr>
+        <tr>
+            <td>Yakiniku med ris</td>
+            <td>129:-</td>
+        </tr>
+        <tr>
+            <td>Sashimi</td>
+            <td>179:-</td>
+        </tr>
+        <tr>
+            <td>Spicy tuna maki</td>
+            <td>159:-</td>
+        </tr>
+        <tr>
+            <td>Veg dumplings</td>
+            <td>129:-</td>
+        </tr>
+        <tr>
+            <td>Pork bao buns</td>
+            <td>149:-</td>
+        </tr>
+    </table>
+
+
+    <button onclick="clickFunction()">Klicka här för att ändra bakgrund</button>
+
+    <body id="background-changer">
 
         <script>
-            function clickFunction(){
+            function updateClock() {
+                var now = new Date();
+                var hours = now.getHours();
+                var minutes = now.getMinutes();
+                var seconds = now.getSeconds();
+                //If else sats
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+                var timeString = hours + ":" + minutes + ":" + seconds;
+                document.getElementById("clock").innerHTML = timeString;
+            } setInterval(updateClock, 1000); updateClock();
+            // Uppdatera klockan direkt vid sidans laddning
 
-                let ourDiv = document.querySelector("#background-changer");
 
-                ourDiv.style.backgroundColor = "tan";
-            }
         </script>
-        <style>
-          div {
-          background: tan;
-        }
-        </style>
-
-    </head>
-    <body>
-        <section class="topnav">
-
-            <section class="topnav-centered">
-              <a href="index1.html">HEM</a>
-              <a href="index2.html" class="active">MENY</a>
-              <a href="https://www.emiliacarlsson.se/">BOKA BORD</a>
-              <a href="https://www.idasofiahogberg.se/">CATERING</a>
-              <a href="index3.html">OM OSS</a>
-            </section>
-        </section>
-
-        <h1>MENY</h1>
-        <table>
-            <tr>
-                <th>Maträtt</th>
-                <th>Pris</th>
-            </tr>
-            <tr>
-                <td>Yakiniku med ris</td>
-                <td>129:-</td>
-            </tr>
-            <tr>
-                <td>Sashimi</td>
-                <td>179:-</td>
-            </tr>
-            <tr>
-                <td>Spicy tuna maki</td>
-                <td>159:-</td>
-            </tr>
-            <tr>
-                <td>Veg dumplings</td>
-                <td>129:-</td>
-            </tr>
-            <tr>
-                <td>Pork bao buns</td>
-                <td>149:-</td>
-            </tr>
-        </table>
 
 
-        <button onclick="clickFunction()">Klicka här för att ändra bakgrund</button>
-        <body id="background-changer">
 
 
     </body>
+
 </html>
